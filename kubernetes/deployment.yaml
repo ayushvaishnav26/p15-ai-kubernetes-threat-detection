@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: ai-threat-dashboard
+
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: ai-threat-dashboard
+
+  template:
+
+    metadata:
+      labels:
+        app: ai-threat-dashboard
+
+    spec:
+
+      containers:
+      - name: ai-threat-dashboard
+
+        image: ai-threat-dashboard
+
+        imagePullPolicy: Never
+
+        ports:
+        - containerPort: 8501
