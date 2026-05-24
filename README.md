@@ -4,6 +4,18 @@ An AI-powered cybersecurity monitoring platform designed to detect suspicious ac
 
 ---
 
+# 🚀 Live Cloud Deployment
+
+## 🌍 Public Live Dashboard
+
+```text
+http://13.126.189.139:8501
+```
+
+> Hosted live on AWS EC2 using Docker containerization.
+
+---
+
 # 🚀 Project Overview
 
 AI Kubernetes Threat Detection System is a cloud-native cybersecurity monitoring solution that simulates Security Operations Center (SOC) behavior for Kubernetes and cloud environments.
@@ -16,78 +28,68 @@ The platform is containerized using Docker, orchestrated with Kubernetes, and de
 
 # 🎯 Objectives
 
-- Detect suspicious activities in Kubernetes/cloud systems
-- Simulate real-world SOC monitoring workflows
-- Perform AI-based anomaly detection
-- Visualize threats using a real-time dashboard
-- Deploy monitoring system using Docker + Kubernetes + AWS
+* Detect suspicious activities in Kubernetes/cloud systems
+* Simulate real-world SOC monitoring workflows
+* Perform AI-based anomaly detection
+* Visualize threats using a real-time dashboard
+* Deploy monitoring system using Docker + Kubernetes + AWS
+* Demonstrate DevSecOps concepts in cloud environments
 
 ---
 
 # 🔥 Features
 
 ## Security Monitoring
-- Real-time log monitoring
-- Brute-force attack detection
-- Failed login detection
-- Suspicious activity alerts
-- CPU spike detection
-- System resource monitoring
+
+* Real-time log monitoring
+* Brute-force attack detection
+* Failed login detection
+* Suspicious activity alerts
+* CPU spike detection
+* System resource monitoring
+* Threat severity classification
 
 ## AI / Detection
-- AI anomaly detection using Isolation Forest
-- Rule-based threat detection
-- Threat severity classification
-- Behavioral analysis
+
+* AI anomaly detection using Isolation Forest
+* Rule-based threat detection
+* Threshold analysis
+* Behavioral anomaly detection
+* Suspicious pattern identification
 
 ## Dashboard
-- Live SOC-style dashboard
-- Threat analytics
-- Pie charts & timeline graphs
-- Top attacking IPs
-- CPU & Memory monitoring
-- Kubernetes pod monitoring
-- Real-time alert feed
+
+* Live SOC-style dashboard
+* Threat analytics
+* Pie charts & timeline graphs
+* Top attacking IPs
+* CPU & Memory monitoring
+* Kubernetes pod monitoring
+* Real-time alert feed
+* Threat severity indicators
 
 ## DevOps / Cloud
-- Docker containerization
-- Kubernetes deployment
-- AWS EC2 deployment
-- Cloud-native architecture
+
+* Docker containerization
+* Kubernetes deployment
+* AWS EC2 deployment
+* Cloud-native architecture
+* Public cloud hosting
 
 ---
 
-# 🧠 AI Detection Logic
-
-The project uses:
-- Isolation Forest anomaly detection
-- Rule-based monitoring
-- Threshold analysis
-- Behavioral anomaly detection
-
-### Example Threat Rules
-
-| Activity | Detection |
-|---|---|
-| CPU Usage > 80% | Possible Crypto Mining |
-| Multiple Failed Logins | Brute Force Attack |
-| Suspicious Activity Spike | Possible Intrusion |
-| Anomalous Behavior Score | AI Alert Trigger |
-
----
-
-# ☁️ Cloud Architecture
+# ☁️ Cloud Deployment Architecture
 
 ```text
 AWS EC2
     ↓
 Docker Container
     ↓
-Kubernetes Deployment
+Streamlit Dashboard
     ↓
-AI Threat Detection Engine
+Threat Detection Engine
     ↓
-SOC Dashboard
+AI Analytics & Monitoring
 ```
 
 ---
@@ -114,29 +116,55 @@ AWS EC2
 
 ---
 
+# 🧠 AI Detection Logic
+
+The project uses:
+
+* Isolation Forest anomaly detection
+* Rule-based monitoring
+* Threshold analysis
+* Behavioral anomaly detection
+
+## Example Threat Rules
+
+| Activity                  | Detection              |
+| ------------------------- | ---------------------- |
+| CPU Usage > 80%           | Possible Crypto Mining |
+| Multiple Failed Logins    | Brute Force Attack     |
+| Suspicious Activity Spike | Possible Intrusion     |
+| Anomalous Behavior Score  | AI Alert Trigger       |
+
+---
+
 # 🛠 Tech Stack
 
 ## Languages
-- Python
+
+* Python
 
 ## Libraries
-- Pandas
-- NumPy
-- Scikit-learn
-- Plotly
-- Streamlit
-- Psutil
-- Kubernetes Python Client
+
+* Pandas
+* NumPy
+* Scikit-learn
+* Plotly
+* Streamlit
+* Psutil
+* Kubernetes Python Client
+* Streamlit Auto Refresh
 
 ## DevOps / Cloud
-- Docker
-- Kubernetes
-- AWS EC2
+
+* Docker
+* Kubernetes
+* AWS EC2
 
 ## Tools
-- VS Code
-- GitHub
-- Docker Desktop
+
+* VS Code
+* GitHub
+* Docker Desktop
+* kubectl
 
 ---
 
@@ -144,13 +172,13 @@ AWS EC2
 
 ## Software Requirements
 
-- Python 3.10+
-- Docker Desktop
-- Kubernetes Enabled
-- Git
-- VS Code
-- AWS Account
-- EC2 Ubuntu Instance
+* Python 3.10+
+* Docker Desktop
+* Kubernetes Enabled
+* Git
+* VS Code
+* AWS Account
+* EC2 Ubuntu Instance
 
 ## Python Libraries
 
@@ -218,13 +246,13 @@ AI-Kubernetes-Threat-Detection/
 ## Clone Repository
 
 ```bash
-git clone https://github.com/your-username/AI-Kubernetes-Threat-Detection.git
+git clone https://github.com/your-username/p15-ai-kubernetes-threat-detection.git
 ```
 
 ## Enter Project Folder
 
 ```bash
-cd AI-Kubernetes-Threat-Detection
+cd p15-ai-kubernetes-threat-detection
 ```
 
 ## Create Virtual Environment
@@ -320,12 +348,14 @@ http://localhost:30007
 # ☁️ AWS EC2 Deployment
 
 ## EC2 Setup
-- Launch Ubuntu EC2 Instance
-- Open Ports:
-  - 22 (SSH)
-  - 80 (HTTP)
-  - 443 (HTTPS)
-  - 8501 (Streamlit)
+
+* Launch Ubuntu EC2 Instance
+* Open Ports:
+
+  * 22 (SSH)
+  * 80 (HTTP)
+  * 443 (HTTPS)
+  * 8501 (Streamlit)
 
 ## SSH Into EC2
 
@@ -346,38 +376,52 @@ sudo apt install docker.io -y
 git clone YOUR_REPOSITORY_URL
 ```
 
-## Run Project
+## Build Docker Image
 
 ```bash
 docker build -t ai-threat-dashboard .
+```
+
+## Run Docker Container
+
+```bash
 docker run -p 8501:8501 ai-threat-dashboard
+```
+
+## Public Dashboard URL
+
+```text
+http://13.126.189.139:8501
 ```
 
 ---
 
 # 📊 Dashboard Features
 
-- Live Threat Feed
-- Threat Analytics
-- Pie Chart Visualization
-- Timeline Graphs
-- Kubernetes Pod Monitoring
-- CPU Usage Monitoring
-- Memory Usage Monitoring
-- Top Attacking IPs
-- Threat Severity Alerts
+* Live Threat Feed
+* Threat Analytics
+* Pie Chart Visualization
+* Timeline Graphs
+* Kubernetes Pod Monitoring
+* CPU Usage Monitoring
+* Memory Usage Monitoring
+* Top Attacking IPs
+* Threat Severity Alerts
 
 ---
 
 # 🚨 Example Threat Scenarios
 
 ## Brute Force Attack
+
 Repeated failed login attempts trigger HIGH/CRITICAL alerts.
 
 ## Crypto Mining Detection
+
 High CPU usage triggers anomaly detection alerts.
 
 ## Suspicious Behavior
+
 AI model identifies unusual activity scores.
 
 ---
@@ -386,38 +430,43 @@ AI model identifies unusual activity scores.
 
 Add screenshots here:
 
-- Dashboard UI
-- Kubernetes Pod Monitoring
-- Threat Analytics
-- AWS EC2 Deployment
-- Docker Containers
+* Dashboard UI
+* Kubernetes Pod Monitoring
+* Threat Analytics
+* AWS EC2 Deployment
+* Docker Containers
+* Live Cloud Deployment
 
 ---
 
 # 🔮 Future Improvements
 
-- Prometheus Integration
-- Grafana Dashboards
-- Real Kubernetes Cluster Monitoring
-- Email / Slack Alerts
-- CI/CD Pipelines
-- AWS EKS Deployment
-- Threat Intelligence APIs
-- SIEM Integration
+* Prometheus Integration
+* Grafana Dashboards
+* Real Kubernetes Cluster Monitoring
+* Email / Slack Alerts
+* CI/CD Pipelines
+* AWS EKS Deployment
+* Threat Intelligence APIs
+* SIEM Integration
+* Elastic IP & Custom Domain
+* HTTPS Security Layer
 
 ---
 
 # 🎓 Learning Outcomes
 
 This project demonstrates:
-- Kubernetes fundamentals
-- Docker containerization
-- Cloud deployment
-- AWS EC2 management
-- AI anomaly detection
-- DevSecOps concepts
-- SOC dashboard development
-- Cybersecurity monitoring
+
+* Kubernetes fundamentals
+* Docker containerization
+* Cloud deployment
+* AWS EC2 management
+* AI anomaly detection
+* DevSecOps concepts
+* SOC dashboard development
+* Cybersecurity monitoring
+* Infrastructure deployment
 
 ---
 
@@ -429,12 +478,15 @@ This project demonstrates:
 4. Show Dashboard Analytics
 5. Demonstrate Kubernetes Monitoring
 6. Explain AWS Cloud Deployment
+7. Open Public Cloud Dashboard
 
 ---
 
 # 📌 Conclusion
 
 This project demonstrates how AI, cybersecurity, Docker, Kubernetes, and cloud computing can be combined to create an intelligent cloud-native threat detection platform for Kubernetes environments.
+
+The system simulates real-world SOC monitoring workflows and demonstrates modern DevSecOps deployment practices using AWS cloud infrastructure.
 
 ---
 
