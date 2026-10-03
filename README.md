@@ -492,7 +492,7 @@ The system simulates real-world SOC monitoring workflows and demonstrates modern
 
 # 📄 License
 
-This project is developed for educational, portfolio, and hackathon purposes. gggggggggggggg
+This project is developed for educational, portfolio, and hackathon purposes.
 
 ---
 
